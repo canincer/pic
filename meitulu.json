@@ -1,0 +1,74 @@
+ [{
+        "name": "美图录", 
+        "key":"meitulu",
+        "url": "https://www.meitulu.com", 
+        "tags": [
+            {"name": "女神", "url": "https://www.meitulu.com/t/nvshen/"}, 
+            {"name": "极品", "url": "https://www.meitulu.com/t/jipin/"},
+            {"name": "嫩模", "url": "https://www.meitulu.com/t/nenmo/"},
+            {"name": "网红", "url": "https://www.meitulu.com/t/wangluohongren/"},
+            {"name": "风俗娘", "url": "https://www.meitulu.com/t/fengsuniang/"},
+            {"name": "气质", "url": "https://www.meitulu.com/t/qizhi/"},
+            {"name": "尤物", "url": "https://www.meitulu.com/t/youwu/"},
+            {"name": "爆乳", "url": "https://www.meitulu.com/t/baoru/"},
+            {"name": "性感", "url": "https://www.meitulu.com/t/xinggan/"},
+            {"name": "诱惑", "url": "https://www.meitulu.com/t/youhuo/"},
+            {"name": "美胸", "url": "https://www.meitulu.com/t/meixiong/"},
+            {"name": "少妇", "url": "https://www.meitulu.com/t/shaofu/"},
+            {"name": "长腿", "url": "https://www.meitulu.com/t/changtui/"},
+            {"name": "萌妹子", "url": "https://www.meitulu.com/t/mengmeizi/"},
+            {"name": "萝莉", "url": "https://www.meitulu.com/t/loli/"},
+            {"name": "可爱", "url": "https://www.meitulu.com/t/keai/"},
+            {"name": "户外", "url": "https://www.meitulu.com/t/huwai/"},
+            {"name": "比基尼", "url": "https://www.meitulu.com/t/bijini/"},
+            {"name": "清纯", "url": "https://www.meitulu.com/t/qingchun/"},
+            {"name": "唯美", "url": "https://www.meitulu.com/t/weimei/"},
+            {"name": "清新", "url": "https://www.meitulu.com/t/qingxin/"}
+            {"name": "丽柜", "url": "https://www.meitulu.com/t/ligui/"}
+        ], 
+        "pages": {
+            "element": "body > div.main > div.boxs > ul > li", 
+            "name": {
+                "element": "p.p_title > a",
+                "attr": "@text"
+            },
+            "url": {
+                "element": "p.p_title > a",
+                "attr": "href",
+                "needMerge": false
+            },
+            "nextPageUrlMode": {
+                "mode": "add", 
+                "replaceSearchValue": ".html", 
+                "replaceValue": "_{page}.html", 
+                "addValue": "{page}.html"
+            }, 
+            "lastPage": {
+                "element": "#pages > a", 
+                "minPageLength": 2, 
+                "attr": "@text", 
+                "descIndex": 2, 
+                "isNeedSplit": false, 
+                "splits": []
+            }
+        }, 
+        "imgs": {
+            "element": "body > div.content > center > img", 
+            "nextPageUrlMode": {
+                "incrementMode": "page",
+                "mode": "replace", 
+                "replaceSearchValue": ".html", 
+                "replaceValue": "_{page}.html", 
+                "addValue": "{page}.html"
+            }, 
+            "lastPage": {
+                "element": "#pages > a", 
+                "minPageLength": 2, 
+                "attr": "@text", 
+                "descIndex": 2, 
+                "isNeedSplit": false, 
+                "splits": []
+            }
+        }, 
+        "supportReptileVersion": 1
+    }]
